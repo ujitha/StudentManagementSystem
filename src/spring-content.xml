@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : spring-conten.xml
+    Created on : March 30, 2012, 10:03 PM
+    Author     : Ujitha
+    Description:
+        Purpose of the document follows.
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:beans="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:lang="http://www.springframework.org/schema/lang"
+xmlns:p="http://www.springframework.org/schema/p"
+xmlns:util="http://www.springframework.org/schema/util"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd   http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-2.5.xsd   http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+
+
+  <bean id="sms" class="org.cse.springtute.StudentManagementSystem" p:repo-ref="repo1"> </bean>
+  <bean id="repo1" class="org.cse.springtute.SimpleStudentRepository"></bean>
+  <bean id="student1"  class="org.cse.springtute.Student" p:firstName="Ujitha" p:lastName="Iroshan" p:regNumber="100590" p:address="Badulla" > </bean>
+  <bean id="student2" class="org.cse.springtute.Student" p:firstName="Irosh" p:lastName="Wickramarathna" p:regNumber="102323" p:address="Cse.Moratuwa"></bean>
+  <bean id="student3" class="org.cse.springtute.Student" p:firstName="Saman" p:lastName="Rathnayaka" p:regNumber="134564" p:address="Kandy"></bean>
+
+  </beans>
+<root>
+
+</root>
